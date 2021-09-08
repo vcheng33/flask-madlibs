@@ -20,7 +20,9 @@ class Story:
 
     def __init__(self, words, text):
         """Create story with words and template text."""
-
+        # Words are the keys for the dictionary
+        # values will be from the form
+        # Somehow need to pair them together to get "answer"
         self.prompts = words
         self.template = text
 
