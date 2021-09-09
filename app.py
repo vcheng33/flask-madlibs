@@ -14,7 +14,7 @@ def display_story_options():
     """ Returns drop down to select a story """
     return render_template("story_selection.html", stories=all_stories_names)
 
-@app.get("/questions")
+@app.post("/questions")
 def display_homepage():
     """ Returns homepage """
     chosen_story = request.form.get("name")
